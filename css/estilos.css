@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face { 
+    font-family: "biko"; 
+    src: url("../biko/Biko_Regular.otf");
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: "biko"; color: rgb(94, 94, 94);
+} 
+.colorPrincipal{
+    background-color: rgb(255, 224, 230);
+}
+.colorSecundario{
+    background-color: rgb(180,210,240);
+}
+.cabeceraGeneral{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(255, 224, 230);
+}
+.encabezadoPrincipal{
+    width: 100%;
+    height: 50%;
+    font-size: 1.3vw; 
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    align-items:center;
+    justify-content:space-between;
+}
+.encabezadoPrincipal__logos{
+    align-self:flex-end;
+}
+.encabezadoPrincipal__marca{
+    margin-left: 10%;
+}
+.encabezadoSecundario{
+    background-color: rgb(180,210,240);
+    width: 100%;
+    height: 50%;
+}
+.barraNavegacion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    font-size:1.7vw;
+    list-style-type: none;
+    border: .2em solid white;
+}
+.barraNavegacion__seccion :hover{
+    color:rgb(255, 224, 230);
+}
+.barraNavegacion__links{
+    color: white;
+    text-decoration: none;
+} 
+.cuerpoIndex{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/bebeoso.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cuerpoIndex__titulo{
+    background-color: rgb(255, 224, 230);
+    padding-top: 1.5vh;
+    padding-left: 1vw;
+    font-size: 1.2em;
+    height: 7vh;
+    border-left: .2em solid white;
+    border-right: .2em solid white;
+    border-bottom: .2em solid white;
+}
+.cuerpo{
+    width: 100%;
+    height: 85vh;
+    background-image: url(../images/bebe2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cuerpo__productos{
+    height: 78vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items:center ;
+    text-align: center;
+}
+.cuerpo__titulo{
+    background-color: rgb(255, 224, 230);
+    text-align: center;
+    font-size: 1.6vw;
+    padding-top: 1.6vh;
+    height: 7vh;
+    border-left: .2em solid white;
+    border-right: .2em solid white;
+    border-bottom: .2em solid white;
+}
+.precio{
+    text-decoration: solid;
+}
+.cuerpoIndex__contenedor{
+    height: 92%;
+}
+.productosIndex__titulo{
+    font-size: 1.2em;
+}
+.productosIndex{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items:center;
+    list-style-type: none;
+    text-align: center;
+}
+.listaProductos{
+    height: 80%;
+}
+.listaProductos__titulo{
+    padding-bottom: 1em;
+}
+.descripcionProducto{
+    width: 20vw;
+    padding-top: .5em;
+    list-style-type: none;
+    font-size: 1vw;
+}
+.bordes{
+border: .5em solid rgb(180,210,240);
+}
+.preguntasFrecuentes{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    justify-content: space-around;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}
+.nuestraInfo__texto{
+    font-size: 4vh;
+    text-decoration: none; 
+}
+.nuestraInfo__links{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+.cuerpoContacto{
+    width: 100%;
+    height: 160vh;
+    background-image: url(../images/bebe2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cuerpoContacto__titulo{
+    background-color: rgb(255, 224, 230);
+    font-size: 1.6vw;
+    padding-top: .4em;
+    height: 7vh;
+    text-align: center;
+    border-left: .2em solid white;
+    border-right: .2em solid white;
+    border-bottom: .2em solid white;
+}
+.promocion{
+    color: rgb(94, 94, 94);
+    height: 6vh;
+    width: 100%;
+    text-align: center;
+    font-size: 2vh;
+}
+.promocion__link:hover{
+    color:rgb(255, 224, 230);
+}
+.promocion__link{
+    color: rgb(94, 94, 94);
+}
+.descuento{
+    text-align: center;
+    height: 80vh;
+} 
+.colorCampo{
+    background-color: transparent;
+} 
+section{
+    width: 100%;
+    height: 25vh;
+}
+.infoComercial{
+    font-size: 2.1vh;
+    padding-left: 2vw;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25vh;
+    align-items: center;
+}
+.infoComercial li{
+    list-style-type: none;
+}
+.cuerpoNosotros{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: justify;
+    height: 17vh;
+    font-size:2vh;
+}
+footer li{
+    list-style-type: none;
+}
+.footer__whatsapp{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}
+/*responsive MQ*/
+/* Mobile*/
+@media screen and (max-width:320px){
+    /*clases comunes entre sí y de Index*/
+.encabezadoPrincipal{
+    font-size: 3vw;
+}
+.encabezadoPrincipal__logos{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items:end;
+    justify-content:end;
+}
+.logos__buscador{
+    width: 50px;
+}
+.logos__petit{
+    width: 40px;
+    height: 40px;
+}
+.logos__responsive{
+    width: 15px;
+    height: 15px;
+}
+.imgResponsive{
+    width: 150px;
+    height: 150px;
+}
+.barraNavegacion{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    font-size: 3.2vw; 
+}
+.cuerpoIndex{
+    width: 100%;
+    height: 130vh;
+    text-align: center;
+}
+.cuerpoIndex__titulo{
+    height: 8%;
+    font-size: 1.2em;
+    padding-top:.8em;
+}
+.cuerpoIndex__contenedor{
+    height: 92%;
+}
+.productosIndex{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-around;
+    align-items:center;
+    list-style-type: none;
+}
+.productosIndex__titulo{
+    font-size: 3vh;
+}
+.gridContainer{
+    font-size: 1.8vh;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    text-align:justify;
+}
+.cuerpo{
+    height: 230vh;
+    text-align: center;
+}
+.cuerpo__titulo{
+    height: 5%;
+    font-size: 1.2em;
+    padding-top:.8em;
+}
+/*clases que afectan a: productos*/
+.cuerpo__productos{
+    height: 93%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center ;
+    text-align: center;
+    margin-top: 1em;
+}
+.listaProductos__titulo{
+    padding-bottom: .5em;
+    font-size: 2.5vh;
+}
+.descripcionProducto{
+    font-size: 3vh;
+    width: 90vw;
+}
+/*Preguntas Frecuentes*/
+.preguntasFrecuentes{
+    height: 95%;
+    align-items:center;
+    padding: 0;
+}
+.cuerpoNosotros{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.nuestraInfo__texto{
+    font-size: 4vh;
+    }
+/*Contacto*/
+.cuerpoContacto{
+    width: 100%;
+    height: 180vh;
+    background-image: url(../images/bebe2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.cuerpoContacto__titulo{
+    background-color: rgb(255, 224, 230);
+    font-size: 1.2em;
+    padding-top: .8em;
+    height: 6%;
+}
+.nuestraInfo__lista{
+    text-align: start;
+    height: 40%;
+}
+.descuento{
+    height: 85vh;
+}
+.iframeMaps{
+    height: 200px;
+}
+}
